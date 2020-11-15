@@ -57,7 +57,32 @@
 }
 .masthead-subheading{
   color: rgb(177, 212, 203);
+  font-size: 17px !important;
 }
 .logo{
   color:#1abc9c!important;
+}
+.w-50 {
+  width: 66% !important;
+}
+.delivery{
+  font-size: 50px !important;
+}
+.masthead-heading{
+  font-size: 24px !important;
+}
+.fa-thumbs-up{
+  font-size: 50px !important;
+}
+.apropos-title{
+  font-size: 50px!important;
+}
+.lead1{
+  font-size: 12px !important;
+}
+.thead-infos{
+  padding: 10px;
+  background-color: rgb(255, 253, 248);
+ -webkit-box-shadow: 0px 1px 2px -1px #000000;
+box-shadow: 0px 1px 2px -1px #000000;
 }

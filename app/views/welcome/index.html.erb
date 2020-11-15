@@ -10,142 +10,247 @@
               <div class="divider-custom-icon"><i class="fas fa-biking"></i></div>
               <div class="divider-custom-line"></div>
             </div>
-            <!-- Portfolio Grid Items-->
-            <div class="row justify-content-center">
-              <!-- Portfolio Items-->
-              <div class="col-md-6 col-lg-4 mb-5">
-                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal0">
-                  <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                    <div class="portfolio-item-caption-content text-center text-white">
-                      <p>Lorem, ipsum.</p>
+          </div>
+          <!-- Services Grid Items-->
+          <div class="container">
+            <div class="row">
+              <div class="card-deck">
+                <div class="card">
+                  <%= image_tag 'particulier.svg', class: "card-img-top  p-4 w-75" %>
+                  <div class="card-body">
+                    <h5 class="card-title text-secondary">Particuliers</h5>
+                    <ul class="list-group">
+                      <li class="list-group-item text-muted">Pas le temps de faire les courses ?</li>
+                      <li class="list-group-item text-muted">Besoin de faire livrer des roses à votre femme ?</li>
+                      <li class="list-group-item text-muted">Malade à la maison et besoin de médicament ?</li>
+                      <li class="list-group-item text-muted">Récupérer un article commandé dans un magasin ?</li>
+                    </ul>
+                    <p class="card-text"><small class="text-muted">L'Horizon Vert - Nice-France</small></p>
+                  </div>
+                </div>
+                <div class="card">
+                  <%= image_tag 'pro.svg', class: "card-img-top  p-4 w-75" %>
+                  <div class="card-body">
+                    <h5 class="card-title text-secondary">Professionnels</h5>
+                    <ul class="list-group">
+                      <li class="list-group-item text-muted">Un colis ou une enveloppe urgente à livrer à un client ?
+                      </li>
+                      <li class="list-group-item text-muted">Des commandes à faire passer dans les temps ?</li>
+                      <li class="list-group-item text-muted">Un document à porter au tribunal, dans une administration ?
+                      </li>
+                      <li class="list-group-item text-muted">Un document à faire signer ?</li>
+                    </ul>
+                    <p class="card-text"><small class="text-muted">L'Horizon Vert - Nice-France</small></p>
+                  </div>
+                </div>
+                <div class="card">
+                  <%= image_tag 'prices.svg', class: "card-img-top p-4 w-50" %>
+                  <div class="card-body">
+                    <h5 class="card-title text-secondary">Grille Tarifaire</h5>
+                    <ul class="list-group">
+                      <li class="list-group-item text-muted">
+                        <a href="" data-toggle="modal" data-target="#exampleModal" class="text-secondary">Nice-Est <strong
+                            class="text-primary pl-2">Tarification</strong>
+                        </a>
+                      </li>
+                      <li class="list-group-item text-muted"><a href="" data-toggle="modal"
+                          data-target="#exampleModal1" class="text-secondary">Nice-Ville <strong
+                            class="text-primary pl-2">Tarification</strong></a></li>
+                      <li class="list-group-item text-muted"><a href="" data-toggle="modal"
+                          data-target="#exampleModal2" class="text-secondary">Nice-Nord <strong
+                            class="text-primary pl-2">Tarification</strong></a></li>
+                      <li class="list-group-item text-muted"><a href="" data-toggle="modal"
+                          data-target="#exampleModal3" class="text-secondary">Nice-Ouest <strong
+                            class="text-primary pl-2">Tarification</strong></a></li>
+                    </ul>
+                    <!-- Modal -->
+                    <!-- Modal NICE EST -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                      aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title text-primary" id="exampleModalLabel">Nice-Est Tarifs</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <div class=" px-5">
+                              <div class="thead-title thead d-flex justify-content-between">
+                                <h5 class="text-secondary">Durée</h5>
+                                <h5 class="text-primary">Prix (TTC)</h5>
+                              </div>
+                              <hr>
+                              <div class="thead-infos rounded d-flex justify-content-between">
+                                <div class="times text-secondary">
+                                  <h6>4H:00min</h6>
+                                  <hr>
+                                  <h6>2H:00min</h6>
+                                  <hr>
+                                  <h6>Express(1H:00min)</h6>
+                                </div>
+                                <div class="price text-primary">
+                                  <h6>8.00 euro</h6>
+                                  <hr>
+                                  <h6>12.00 euro</h6>
+                                  <hr>
+                                  <h6>22.00 euro</h6>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="modal-footer p-0 d-flex justify-content-center">
+                            <a href="#" class="text-primary rounded btn-secondary p-4 font-weight-bold"
+                              data-dismiss="modal">SERVICES</a>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                  </div><%= image_tag 'portfolio/master.jpg', class: "img-fluid"%>
+                    <!-- Modal NICE VILLE -->
+                    <div class="modal fade" id="exampleModal1" tabindex="-2" role="dialog"
+                      aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title text-primary" id="exampleModalLabel">Nice-Est Tarifs</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <div class=" px-5">
+                              <div class="thead-title thead d-flex justify-content-between">
+                                <h5 class="text-secondary">Durée</h5>
+                                <h5 class="text-primary">Prix (TTC)</h5>
+                              </div>
+                              <hr>
+                              <div class="thead-infos rounded d-flex justify-content-between">
+                                <div class="times text-secondary">
+                                  <h6>4H:00min</h6>
+                                  <hr>
+                                  <h6>2H:00min</h6>
+                                  <hr>
+                                  <h6>Express(1H:00min)</h6>
+                                </div>
+                                <div class="price text-primary">
+                                  <h6>6.50 euro</h6>
+                                  <hr>
+                                  <h6>10.00 euro</h6>
+                                  <hr>
+                                  <h6>15.00 euro</h6>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="modal-footer p-0 d-flex justify-content-center">
+                            <a href="#" class="text-primary rounded btn-secondary p-4 font-weight-bold"
+                              data-dismiss="modal">SERVICES</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Modal NICE NORD -->
+                    <div class="modal fade" id="exampleModal2" tabindex="-3" role="dialog"
+                      aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title text-primary" id="exampleModalLabel">Nice-Est Tarifs</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <div class=" px-5">
+                              <div class="thead-title thead d-flex justify-content-between">
+                                <h5 class="text-secondary">Durée</h5>
+                                <h5 class="text-primary">Prix (TTC)</h5>
+                              </div>
+                              <hr>
+                              <div class="thead-infos rounded d-flex justify-content-between">
+                                <div class="times text-secondary">
+                                  <h6>4H:00min</h6>
+                                  <hr>
+                                  <h6>2H:00min</h6>
+                                  <hr>
+                                  <h6>Express(1H:00min)</h6>
+                                </div>
+                                <div class="price text-primary">
+                                  <h6>8.00 euro</h6>
+                                  <hr>
+                                  <h6>12.00 euro</h6>
+                                  <hr>
+                                  <h6>22.00 euro</h6>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="modal-footer p-0 d-flex justify-content-center">
+                            <a href="#" class="text-primary rounded btn-secondary p-4 font-weight-bold"
+                              data-dismiss="modal">SERVICES</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Modal NICE OUEST -->
+                    <div class="modal fade" id="exampleModal3" tabindex="-4" role="dialog"
+                      aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title text-primary" id="exampleModalLabel">Nice-Est Tarifs</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <div class=" px-5">
+                              <div class="thead-title thead d-flex justify-content-between">
+                                <h5 class="text-secondary">Durée</h5>
+                                <h5 class="text-primary">Prix (TTC)</h5>
+                              </div>
+                              <hr>
+                              <div class="thead-infos rounded d-flex justify-content-between">
+                                <div class="times text-secondary">
+                                  <h6>4H:00min</h6>
+                                  <hr>
+                                  <h6>2H:00min</h6>
+                                  <hr>
+                                  <h6>Express(1H:00min)</h6>
+                                </div>
+                                <div class="price text-primary">
+                                  <h6>10.00 euro</h6>
+                                  <hr>
+                                  <h6>17.00 euro</h6>
+                                  <hr>
+                                  <h6>27.00 euro</h6>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="modal-footer p-0 d-flex justify-content-center">
+                            <a href="#" class="text-primary rounded btn-secondary p-4 font-weight-bold"
+                              data-dismiss="modal">SERVICES</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <p class="card-text" id="apropos-anchor"><small class="text-muted">L'Horizon Vert -
+                        Nice-France</small></p>
+                  </div>
                 </div>
               </div>
-              <div class="col-md-6 col-lg-4 mb-5">
-                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
-                  <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                    <div class="portfolio-item-caption-content text-center text-white">
-                      <p>Lorem, ipsum.</p>
-                    </div>
-                  </div><%= image_tag 'portfolio/coursier_stuart.jpg', class: "img-fluid"%>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-4 mb-5">
-                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
-                  <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                    <div class="portfolio-item-caption-content text-center text-white">
-                      <p>Lorem, ipsum.</p>
-                    </div>
-                  </div><%= image_tag 'portfolio/communication.jpg', class: "img-fluid"%>
-                </div>
-              </div>
+            </div>
+          </div>
         </section>
         <!-- Portfolio Modal-->
-        <div class="portfolio-modal modal fade" id="portfolioModal0" tabindex="-1" role="dialog"
-          aria-labelledby="#portfolioModal0Label" aria-hidden="true">
-          <div class="modal-dialog modal-xl" role="document">
-            <div class="modal-content">
-              <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i
-                    class="fas fa-times"></i></span></button>
-              <div class="modal-body text-center">
-                <div class="container">
-                  <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                      <!-- Portfolio Modal - Title-->
-                      <h2 class="portfolio-modal-title text-secondary mb-0">Lorem, ipsum.</h2>
-                      <!-- Icon Divider-->
-                      <div class="divider-custom">
-                        <div class="divider-custom-line"></div>
-                        <div class="divider-custom-icon"><i class="fas fa-biking"></i></div>
-                        <div class="divider-custom-line"></div>
-                      </div>
-                      <!-- Portfolio Modal - Image--><%= image_tag 'coursier.svg', class: "img-fluid rounded mb-5"%>
-                      <!-- Portfolio Modal - Text-->
-                      <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.Mollitia neque assumenda
-                        ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae?
-                        Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                      <button class="btn btn-primary" href="#" data-dismiss="modal">
-                        <i class="fas fa-times fa-fw"></i>Fermer
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog"
-          aria-labelledby="#portfolioModal0Label" aria-hidden="true">
-          <div class="modal-dialog modal-xl" role="document">
-            <div class="modal-content">
-              <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i
-                    class="fas fa-times"></i></span></button>
-              <div class="modal-body text-center">
-                <div class="container">
-                  <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                      <!-- Portfolio Modal - Title-->
-                      <h2 class="portfolio-modal-title text-secondary mb-0">Lorem, ipsum.</h2>
-                      <!-- Icon Divider-->
-                      <div class="divider-custom">
-                        <div class="divider-custom-line"></div>
-                        <div class="divider-custom-icon"><i class="fas fa-biking"></i></i></div>
-                        <div class="divider-custom-line"></div>
-                      </div>
-                      <!-- Portfolio Modal - Image--><%= image_tag 'coursier.svg', class: "img-fluid rounded mb-5"%>
-                      <!-- Portfolio Modal - Text-->
-                      <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.Mollitia neque assumenda
-                        ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae?
-                        Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                      <button class="btn btn-primary" href="#" data-dismiss="modal">
-                        <i class="fas fa-times fa-fw"></i>Fermer
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog"
-          aria-labelledby="#portfolioModal0Label" aria-hidden="true">
-          <div class="modal-dialog modal-xl" role="document">
-            <div class="modal-content">
-              <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i
-                    class="fas fa-times"></i></span></button>
-              <div class="modal-body text-center">
-                <div class="container">
-                  <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                      <!-- Portfolio Modal - Title-->
-                      <h2 class="portfolio-modal-title text-secondary mb-0">Lorem, ipsum.</h2>
-                      <!-- Icon Divider-->
-                      <div class="divider-custom">
-                        <div class="divider-custom-line"></div>
-                        <div class="divider-custom-icon"><i class="fas fa-biking"></i></i></div>
-                        <div class="divider-custom-line"></div>
-                      </div>
-                      <!-- Portfolio Modal - Image--><%= image_tag 'coursier.svg', class: "img-fluid rounded mb-5"%>
-                      <!-- Portfolio Modal - Text-->
-                      <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.Mollitia neque assumenda
-                        ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae?
-                        Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                      <button class="btn btn-primary" href="#" data-dismiss="modal">
-                        <i class="fas fa-times fa-fw"></i>Fermer
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+
         <section class="page-section parallax bg-primary text-white mb-0" id="about">
           <div class="overlay">
             <!-- About Section Heading-->
             <div class="text-center apropos">
-              <h2 class="page-section-heading apropos d-inline-block text-white">A PROPOS</h2>
+              <h2 class="page-section-heading apropos-title d-inline-block text-white">A PROPOS</h2>
             </div>
             <!-- Icon Divider-->
             <div class="divider-custom divider-light">
@@ -156,14 +261,16 @@
             <!-- About Section Content-->
             <div class="container">
               <div class="">
-                <p class=""><strong>L'Horizon Vert </strong>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Quis consequatur esse
-                  sit,in aspernatur voluptas aperiam ut numquam omnis fugit reprehenderit autem voluptatum optio
-                  repudiandae molestias quia ducimus eius atque.Lorem ipsum dolor, sit amet consectetur adipisicing
-                  elit. Quis consequatur esse
-                  sit,in aspernatur voluptas aperiam ut numquam omnis fugit reprehenderit autem voluptatum optio
-                  repudiandae molestias quia ducimus eius atque.</p>
+                <h5>Pourquoi faire compliqué quand on peut faire Simple ?</h5>
+                <h6>L'Horizon Vert est la solution la plus adaptée à vos besoins.</h6>
+                <p class="apropos">Il est très simple de commander un service de livraison par coursier vélo à NICE.
+                  Tout ce
+                  qu’il vous faut c'est de contacter l'entreprise de coursier L’horizon vert par téléphone et d'indiquer
+                  l'adresse où nous allons chercher le colis.
+                  Peu importe sa valeur. Tous les colis sont scellés en toute sécurité. De plus, le coursier à vélo et
+                  le destinataire signe, à chaque fois, une preuve d'envoi et de réception des colis.</p>
               </div>
+              <div id="contact-anchor"></div>
             </div>
           </div>
         </section>
@@ -186,6 +293,9 @@
                   <div class="icon-contact mb-3"><i class="fas fa-mobile-alt"></i></div>
                   <div class="text-muted">Téléphone</div>
                   <div class="lead font-weight-bold">(+33) 761-87-90-46 </div>
+                  <p class="p-0 m-0 text-danger"><strong>Merci de préciser lors de votre appel :</strong></p>
+                  <p class="p-0 m-0 text-primary">* Les dimensions et poids du colis.</p>
+                  <p class="p-0 m-0 text-primary">* L'adresse de livraison.</p>
                 </div>
               </div>
               <div class="col-lg-4">
@@ -195,6 +305,10 @@
                     href="mailto:name@example.com">aoualii16@gmail.com </a>
                 </div>
               </div>
+            </div>
+            <div class="container text-center mt-4">
+              <h5 class="text-secondary">Votre temps est sauvé ! <i class="fas fa-thumbs-up text-primary"></i></h5>
+              <h6 class="text-muted">A nous de livrer rapidement et efficacement vos plis et colis à destination !</h6>
             </div>
           </div>
         </section>

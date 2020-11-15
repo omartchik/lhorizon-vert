@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
-  get 'welcome/index'
+  get 'index', to: 'welcome#index'
+  get 'admin', to: 'welcome#admin'
   root 'welcome#index'
 end
